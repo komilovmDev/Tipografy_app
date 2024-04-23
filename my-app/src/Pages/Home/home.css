@@ -7,9 +7,24 @@
 
 body {
     height: 100vh;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
+}
+
+.App {
+    width: 100vw;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    padding: 0 6vw;
+    background-color: green;
+    display: flex;  
+    align-items: center;
+    color: #fff;
 }
 
 .home {
@@ -17,7 +32,8 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 10 0px;
+    gap: 100px;
+    margin-top: 50px;
 }
 
 .options {
@@ -53,79 +69,24 @@ body {
     padding: 0 10px;
 }
 
-
 /* home.css */
 
-/* Input range uchun stilizatsiya */
-input[type=range] {
-    /* Arka plan rangi */
-    background-color: grey;
-    /* Kulrang */
-    /* Chiziq o'lchami */
-    height: 5px;
-    /* Avtomatik ko'zdan kechirish */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /* Araliklar */
-    margin: 5px 0;
+aside {
+    width: 250px;
+    height: 300px;
+    box-shadow: 0px 0px 10px 1px #00000037;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.asideBtns {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* Chunji chiziq (shkala) */
-input[type=range]::-webkit-slider-runnable-track {
-    background-color: green;
-    /* Yashil rang */
-    height: 5px;
-}
 
-/* Chunji chiziq (shkala) Firefox uchun */
-input[type=range]::-moz-range-track {
-    background-color: green;
-    /* Yashil rang */
-    height: 5px;
-}
-
-/* Chunji chiziq (shkala) IE uchun */
-input[type=range]::-ms-track {
-    background-color: green;
-    /* Yashil rang */
-    height: 5px;
-}
-
-/* Chunji chiziq (polzunok) */
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    /* Oq rang */
-    border-radius: 50%;
-    border: 2px solid green;
-    /* Yashil rang */
-    cursor: pointer;
-}
-
-/* Chunji chiziq (polzunok) Firefox uchun */
-input[type=range]::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    /* Oq rang */
-    border-radius: 50%;
-    border: 2px solid green;
-    /* Yashil rang */
-    cursor: pointer;
-}
-
-/* Chunji chiziq (polzunok) IE uchun */
-input[type=range]::-ms-thumb {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    /* Oq rang */
-    border-radius: 50%;
-    border: 2px solid green;
-    /* Yashil rang */
-    cursor: pointer;
-}
+.asideBtns button:nth-child(1) {
+    background: #5653ea;
+}   

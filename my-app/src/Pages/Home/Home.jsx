@@ -73,8 +73,12 @@ export default function Home() {
                 </div>
             </div>
             <aside>
-                <p>aside</p>
+                <p>Aside</p>
                 <p>Price: {totalPrice} so'm</p>
+                <div className="asideBtns">
+                    <button>Submit</button>
+                    <button>Rest</button>
+                </div>
             </aside>
         </div>
     );
