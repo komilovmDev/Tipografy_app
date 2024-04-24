@@ -22,59 +22,121 @@ export default function Home() {
     const calculateTotalPrice = (value1, value2) => {
         const selectedOptionValue = document.querySelector('select').value;
         const total = parseInt(selectedOptionValue) * (parseInt(value1) + parseInt(value2));
-        setTotalPrice(total);   
+        setTotalPrice(total);
     };
 
     return (
         <div className="home">
-            <div className="options">
-                <div className="optionsTitle">
-                    <p>Oq Qog'oz</p>
-                </div>
-                <div className="optionMain">
-                    <select onChange={() => calculateTotalPrice(inputValue1, inputValue2)} name="" id="">
-                        <option value="2800">2800</option>
-                        <option value="3800">3800</option>
-                        <option value="4800">4800</option>
-                        <option value="5800">5800</option>
-                    </select>
-                    <div className="optionValueChanges">
-                        <div className="optionValueChange">
-                            <input
-                                aria-valuemax={100}
-                                min={0}
-                                max={100}
-                                type="range"
-                                value={inputValue1} 
-                                onChange={handleRangeChange1} 
-                            />
-                            <input
-                                type="text"
-                                value={inputValue1}  
-                                readOnly 
-                            />
+            <div className="allOptn">
+                <div className="options">
+                    <div className="optionsTitle">
+                        <p>Oq Qog'oz</p>
+                    </div>
+                    <div className="optionMain">
+                        <select onChange={() => calculateTotalPrice(inputValue1, inputValue2)} name="" id="">
+                            <option value="2800">2800</option>
+                            <option value="3800">3800</option>
+                            <option value="4800">4800</option>
+                            <option value="5800">5800</option>
+                        </select>
+                        <div className="optionValueChanges">
+                            <div className="optionValueChange">
+                                <input
+                                    aria-valuemax={100}
+                                    min={0}
+                                    max={100}
+                                    type="range"
+                                    value={inputValue1}
+                                    onChange={handleRangeChange1}
+                                />
+                                <input
+                                    type="text"
+                                    value={inputValue1}
+                                    readOnly
+                                />
+                            </div>
+                            <div className="optionValueChange">
+                                <input
+                                    aria-valuemax={100}
+                                    min={0}
+                                    max={100}
+                                    type="range"
+                                    value={inputValue2}
+                                    onChange={handleRangeChange2}
+                                />
+                                <input
+                                    type="text"
+                                    value={inputValue2}
+                                    readOnly
+                                />
+                            </div>
                         </div>
-                        <div className="optionValueChange">
-                            <input
-                                aria-valuemax={100}
-                                min={0}
-                                max={100}
-                                type="range"
-                                value={inputValue2} 
-                                onChange={handleRangeChange2}  
-                            />
-                            <input
-                                type="text"
-                                value={inputValue2} 
-                                readOnly  
-                            />
+                    </div>
+                </div>
+                <div className="options">
+                    <div className="optionsTitle">
+                        <p>Qora Qog'oz</p>
+                    </div>
+                    <div className="optionMain">
+                        <select onChange={() => calculateTotalPrice(inputValue1, inputValue2)} name="" id="">
+                            <option value="2800">2800</option>
+                            <option value="3800">3800</option>
+                            <option value="4800">4800</option>
+                            <option value="5800">5800</option>
+                        </select>
+                        <div className="optionValueChanges">
+                            <div className="optionValueChange">
+                                <input
+                                    aria-valuemax={100}
+                                    min={0}
+                                    max={100}
+                                    type="range"
+                                    value={inputValue1}
+                                    onChange={handleRangeChange1}
+                                />
+                                <input
+                                    type="text"
+                                    value={inputValue1}
+                                    readOnly
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="options">
+                    <div className="optionsTitle">
+                        <p>Qora Qog'oz</p>
+                    </div>
+                    <div className="optionMain">
+                        <select onChange={() => calculateTotalPrice(inputValue1, inputValue2)} name="" id="">
+                            <option value="2800">2800</option>
+                            <option value="3800">3800</option>
+                            <option value="4800">4800</option>
+                            <option value="5800">5800</option>
+                        </select>
+                        <div className="optionValueChanges">
+                            <div className="optionValueChange">
+                                <input
+                                    aria-valuemax={100}
+                                    min={0}
+                                    max={100}
+                                    type="range"
+                                    value={inputValue1}
+                                    onChange={handleRangeChange1}
+                                />
+                                <input
+                                    type="text"
+                                    value={inputValue1}
+                                    readOnly
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <aside>
-                <p>Aside</p>
-                <p>Price: {totalPrice} so'm</p>
+                <p>Mahsulotlar Marxi</p>
+                <p>Narx: {totalPrice} so'm</p>
                 <div className="asideBtns">
                     <button>Submit</button>
                     <button>Rest</button>

@@ -17,11 +17,17 @@ body {
     width: 100vw;
 }
 
+.allOptn {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
 nav {
     height: 80px;
     width: 100%;
     padding: 0 6vw;
-    background-color: green;
+    background-color: #4a76f6;
     display: flex;  
     align-items: center;
     color: #fff;
@@ -84,9 +90,33 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 20px;
 }
 
 
 .asideBtns button:nth-child(1) {
-    background: #5653ea;
+    background: #4a76f6;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px 1px #4a75f65a;
 }   
+
+.asideBtns button:nth-child(2) {
+    background: #fff;
+    color: #4a76f6;
+    padding: 5px 10px;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 3px solid #4a76f6;
+}   
+
+
+aside p {
+    font-size: 19px;
+    font-family: sans-serif;
+}
